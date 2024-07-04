@@ -15,6 +15,10 @@ python ./gl8.py IBM.ch8
 
 Or any other ROM file you'd want to run.
 
+### Controls?
+
+1234QWERASDFZXCV map to 0x0 - 0xF keys on the CHIP-8 controller. Press ESC to quit the emulator any time.
+
 ### What's so special about it?
 
 It's in Python, it's a one file program, it uses only two libraries: pygame and moderngl. All the font data,
