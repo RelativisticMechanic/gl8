@@ -619,7 +619,8 @@ def main(args):
     pg.display.gl_set_attribute(pg.GL_MULTISAMPLESAMPLES, 0)
     
     pygame_display = pg.display.set_mode((CHIP8_SCREEN_WIDTH * CHIP8_PIXEL_SIZE, CHIP8_SCREEN_HEIGHT * CHIP8_PIXEL_SIZE), 
-                                         DOUBLEBUF | OPENGL | HWSURFACE | pg.NOFRAME)
+                                         DOUBLEBUF | OPENGL | HWSURFACE)
+    pg.display.set_caption(f'GL8 Emulator | (C) Siddharth Gautam, 2024 | {os.path.basename(args[1]).upper()}')
     pygame_clock = pg.time.Clock()
 
     ctx = moderngl.create_context()
